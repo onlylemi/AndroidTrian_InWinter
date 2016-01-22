@@ -14,7 +14,7 @@ import android.view.View;
 /**
  * MyView
  *
- * @author: only乐秘
+ * @author: onlylemi
  * @time: 2016-01-22 8:21
  */
 public class MyView extends View {

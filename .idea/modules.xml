@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidTrian_InWinter.iml" filepath="$PROJECT_DIR$/AndroidTrian_InWinter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/colorid/colorid.iml" filepath="$PROJECT_DIR$/colorid/colorid.iml" />
     </modules>
   </component>
 </project>

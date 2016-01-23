@@ -4,15 +4,12 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-
-import java.util.Random;
 
 /**
  * MySurfaceView
@@ -266,7 +263,7 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
                 circleR && circleX > rectX + rectW && circleY < rectY) {
             return false;
         } else if (Math.pow(rectX - circleX, 2) + Math.pow(rectY + rectH - circleY, 2) > circleR *
-                circleR && circleX < rectX && circleY > rectX + rectW) {
+                circleR && circleX < rectX && circleY > rectY + rectH) {
             return false;
         } else if (Math.pow(rectX + rectW - circleX, 2) + Math.pow(rectY + rectH - circleY, 2) >
                 circleR * circleR && circleX > rectX + rectW && circleY > rectY + rectH) {

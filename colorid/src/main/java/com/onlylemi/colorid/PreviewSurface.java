@@ -23,7 +23,6 @@ import java.io.IOException;
  */
 public class PreviewSurface extends CameraSurface implements Camera.PreviewCallback {
 
-
     private OnColorListener listener;
 
     public PreviewSurface(Context context) {

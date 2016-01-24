@@ -102,7 +102,6 @@ public class CircleCrossView extends SurfaceView implements SurfaceHolder.Callba
      * 逻辑
      */
     private void logic() {
-
     }
 
     /**

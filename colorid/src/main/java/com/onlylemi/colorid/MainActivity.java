@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity implements PreviewSurface.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Log.i(TAG, "onCreate");
 
 //        crossView = (CircleCrossView) findViewById(R.id.cross_view);

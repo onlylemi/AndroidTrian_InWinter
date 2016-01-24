@@ -23,6 +23,8 @@ import java.io.IOException;
  */
 public class PreviewSurface extends CameraSurface implements Camera.PreviewCallback {
 
+    private OnColorListener listener;
+
     public PreviewSurface(Context context) {
         super(context);
     }
@@ -71,7 +73,28 @@ public class PreviewSurface extends CameraSurface implements Camera.PreviewCallb
         int color = bitmap.getPixel(size.width / 2, size.height / 2);
 
         Log.i(TAG, "color:" + color);
+
+
+        if (null != listener) {
+            listener.onColor(color);
+        }
     }
 
+    /**
+     * 设置监听器
+     *
+     * @param listener
+     */
+    public void setOnColorListener(OnColorListener listener) {
+        this.listener = listener;
+    }
+
+
+    /**
+     * 颜色监听器
+     */
+    public interface OnColorListener {
+        void onColor(int color);
+    }
 
 }

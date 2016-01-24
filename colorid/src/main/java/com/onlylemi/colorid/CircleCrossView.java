@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PixelFormat;
+import android.graphics.PorterDuff;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.SurfaceHolder;
@@ -80,7 +81,7 @@ public class CircleCrossView extends SurfaceView implements SurfaceHolder.Callba
         // 绘制背景
 //        paint.setColor(Color.WHITE);
 //        canvas.drawRect(0, 0, getWidth(), getHeight(), paint);
-        //canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
+        canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
 
         canvas.save();
         canvas.translate(getWidth() / 2, getHeight() / 2); //设置坐标系为view中心
@@ -101,7 +102,6 @@ public class CircleCrossView extends SurfaceView implements SurfaceHolder.Callba
      * 逻辑
      */
     private void logic() {
-
     }
 
     /**

@@ -2,7 +2,10 @@ package com.onlylemi.game;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PixelFormat;
+import android.graphics.PorterDuff;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -63,6 +66,9 @@ public class GameSurface extends SurfaceView implements SurfaceHolder.Callback, 
         holder.addCallback(this);
         setKeepScreenOn(true);
 
+        holder.setFormat(PixelFormat.TRANSPARENT);
+        setZOrderOnTop(true);
+
         paint = new Paint();
         paint.setAntiAlias(true);
 
@@ -110,7 +116,9 @@ public class GameSurface extends SurfaceView implements SurfaceHolder.Callback, 
      * @param canvas
      */
     private void myDraw(Canvas canvas) {
-        background.draw(canvas, paint);
+        //background.draw(canvas, paint);
+        // 清屏
+        canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
 
         switch (gameState) {
             case Constants.GAME_START:

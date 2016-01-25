@@ -33,6 +33,7 @@ public class Start extends BaseLayer {
 
         triangleW = 80;
         triangleH = 50;
+
     }
 
     @Override

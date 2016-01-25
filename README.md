@@ -2,10 +2,9 @@
 
 ## day01 —— `app`
 * **上午** `view`、`surfaceview`基本环境搭建，画布`canvas`和画笔`paint`介绍  
-  `MyView` 自定义view
+  `MyView` 自定义view  
   `MySurfaceView` surfaceview游戏模型建立，
-* **下午**  
-  `surfaceview`向量(Vector)模拟、碰撞检测(圆与圆、矩形与矩形、圆与矩形)  
+* **下午** `surfaceview`向量模拟、碰撞检测(圆与圆、矩形与矩形、圆与矩形)  
   `Vector` 自己定义的物体向量实现类, surfaceview中有应用（一个简单的引力应用）
 
 ## day02 —— `colorid`
@@ -18,5 +17,4 @@
   `Player`、`Start`、`Background`图层的绘制
 
 ## day04 —— `flappybird`
-* **上午**
-  `Barrier`和`Score`图层的绘制，游戏碰撞检测的实现，demo成型
+* **上午** `Barrier`和`Score`图层的绘制，游戏碰撞检测的实现，demo成型

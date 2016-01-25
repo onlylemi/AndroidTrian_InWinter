@@ -18,4 +18,4 @@
 
 ## day04 —— `flappybird`
 * **上午** `Barrier`和`Score`图层的绘制，游戏碰撞检测的实现，demo成型
-* **下午** 游戏增强现实(camera)的实现
+* **下午** 游戏增强现实(`camera`)的实现

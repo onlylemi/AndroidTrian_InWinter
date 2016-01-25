@@ -92,7 +92,6 @@ public class Barrier extends BaseLayer {
             barrier2H = getBarrierRandomH();
         }
 
-
         // 主角 与 障碍的碰撞检测
         boolean isColl1 = circleAndRect(playerX, playerY, radius, barrier1X, barrierY, barrierW,
                 barrier1H);
